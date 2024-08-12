@@ -62,7 +62,7 @@ const Services = () => {
   }];
 
   return (
-    <div>
+    <div className="mt-[60px] lg:mt-36">
       <SectionHeading title={Labels.SERVICES_TITLE} subTitle={Labels.SERVICES_SUBTITLE} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {listOfServices.map(item => {

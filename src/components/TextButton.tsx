@@ -2,7 +2,10 @@ import { PropsWithChildren } from "react"
 import { cn } from "../lib/utils";
 
 interface TextButtonProps {
-  className?: string;
+  customContainerClassName?: string;
+  customButtonClassName?: string;
+  customTextClassName?: string;
+  buttonText: string;
 }
 
 /**
@@ -11,13 +14,18 @@ interface TextButtonProps {
  * @param {TextButtonProps & PropsWithChildren} props - The props passed to this component. 
  * @returns 
  */
-const TextButton = (props: TextButtonProps & PropsWithChildren) => {
-  const { className, children } = props;
+const TextButton = (props: TextButtonProps) => {
+  const { customContainerClassName, customButtonClassName, customTextClassName, buttonText } = props;
 
-  const textButtonClassName = cn('py-4 rounded-[14px] px-8 bg-customDark text-white text-xl transition hover:bg-customGreen hover:text-customDark', className);
+  const containerClassName = cn('max-lg:flex max-lg:flex-1', customContainerClassName);
+  const buttonClassName = cn('py-4 rounded-[14px] px-8 bg-customDark text-white text-xl transition hover:bg-customGreen hover:text-customDark', customButtonClassName);
+  const textClassname = cn(customTextClassName);
+
   return (
-    <div className="max-lg:flex max-lg:flex-1">
-      <button className={textButtonClassName}>{children}</button>
+    <div className={containerClassName}>
+      <button className={buttonClassName}>
+        <span className={textClassname}>{buttonText}</span>
+      </button>
     </div>
   )
 }

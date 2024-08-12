@@ -5,6 +5,7 @@ import CompanyList from "./components/CompanyList"
 import Featured from "./components/Featured"
 import MakeHappen from "./components/MakeHappen"
 import Services from "./components/Services"
+import Team from "./components/Team"
 import WorkingProcess from "./components/WorkingProcess"
 
 /**
@@ -24,6 +25,7 @@ const LandingScreen = () => {
       <MakeHappen />
       <CaseStudy />
       <WorkingProcess />
+      <Team />
     </Container>
   )
 }

@@ -18,7 +18,7 @@ const WorkingProcessCard = (props: WorkingProcessCardProps) => {
     setOpen(!open);
   }
 
-  const containerClassname = cn('transition-all ease-in-out duration-500 py-10 px-[60px] rounded-[35px] shadow-[0_3px_0_0] bg-customGrey', open && 'bg-customGreen')
+  const containerClassname = cn('transition-all ease-in-out duration-500 py-10 px-[60px] rounded-[35px] border border-customDark shadow-[0_3px_0_0] bg-customGrey', open && 'bg-customGreen')
   const bodyClassname = cn('transition-all overflow-hidden ease-in-out duration-500 max-h-0 opacity-0', open && 'max-h-screen opacity-1')
 
   return (

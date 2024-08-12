@@ -38,7 +38,7 @@ const WorkingProcess = () => {
   ];
 
   return (
-    <div className="mt-[60px]">
+    <div className="mt-[60px] lg:mt-36">
       <SectionHeading title={Labels.WORKING_PROGRESS_TITLE} subTitle={Labels.WORKING_PROGRESS_SUBTITLE} customTextClassname="lg:max-w-[300px]" />
       <div className="flex flex-col gap-7">
         {listOfWorkingProcess.map(item => <WorkingProcessCard item={item} />)}

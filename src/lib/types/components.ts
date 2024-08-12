@@ -30,3 +30,11 @@ export type WorkingProcessType = {
   title: string;
   body: string;
 }
+
+export type TeamMemberType = {
+  id: number;
+  image: string;
+  name: string;
+  position: string;
+  description: string;
+}
