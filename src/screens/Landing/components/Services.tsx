@@ -18,7 +18,6 @@ const Services = () => {
     bgColor: 'bg-customGrey',
     textBgColor: 'bg-customGreen',
     textColor: 'text-customDark',
-    iconHasBg: true,
     iconType: IconButtonType.DARK
   }, {
     id: 1,
@@ -27,7 +26,6 @@ const Services = () => {
     bgColor: 'bg-customGreen',
     textBgColor: 'bg-customGrey',
     textColor: 'text-customGrey',
-    iconHasBg: true,
     iconType: IconButtonType.DARK
   }, {
     id: 2,
@@ -36,7 +34,6 @@ const Services = () => {
     bgColor: 'bg-customDark',
     textBgColor: 'bg-customGreen',
     textColor: 'text-customDark',
-    iconHasBg: true,
     iconType: IconButtonType.LIGHT
   }, {
     id: 3,
@@ -45,7 +42,6 @@ const Services = () => {
     bgColor: 'bg-customGrey',
     textBgColor: 'bg-customGreen',
     textColor: 'text-customDark',
-    iconHasBg: true,
     iconType: IconButtonType.DARK
   }, {
     id: 4,
@@ -54,7 +50,6 @@ const Services = () => {
     bgColor: 'bg-customGreen',
     textBgColor: 'bg-customGrey',
     textColor: 'text-customGrey',
-    iconHasBg: true,
     iconType: IconButtonType.DARK
   }, {
     id: 5,
@@ -63,7 +58,6 @@ const Services = () => {
     bgColor: 'bg-customDark',
     textBgColor: 'bg-customGreen',
     textColor: 'text-customDark',
-    iconHasBg: true,
     iconType: IconButtonType.LIGHT
   }];
 
@@ -89,8 +83,8 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex flex-row justify-between items-end">
-                <IconButton iconHasBg={item.iconHasBg} type={item.iconType} />
-                <img src={item.icon} />
+                <IconButton type={item.iconType} />
+                <img className="max-w-[210px] max-h-[170px]" src={item.icon} />
               </div>
             </div>
           )

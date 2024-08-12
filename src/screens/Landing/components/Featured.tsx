@@ -11,9 +11,7 @@ const Featured = () => {
         <div className="mb-10">
           <span className="text-xl">{Labels.FEATURED_BODY}</span>
         </div>
-        <div className="max-lg:flex max-lg:flex-1">
-          <TextButton className="max-lg:flex-1">{ButtonTitles.BOOK_CONSULTATION}</TextButton>
-        </div>
+        <TextButton className="max-lg:flex-1">{ButtonTitles.BOOK_CONSULTATION}</TextButton>
       </div>
       <div className="max-lg:hidden flex flex-1">
         <img src={featuredImg} className="w-full h-full lg:block" />

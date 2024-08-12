@@ -5,6 +5,7 @@ import CompanyList from "./components/CompanyList"
 import Featured from "./components/Featured"
 import MakeHappen from "./components/MakeHappen"
 import Services from "./components/Services"
+import WorkingProcess from "./components/WorkingProcess"
 
 /**
  * A custom landing screen where all user will see when first time
@@ -22,6 +23,7 @@ const LandingScreen = () => {
       <Services />
       <MakeHappen />
       <CaseStudy />
+      <WorkingProcess />
     </Container>
   )
 }

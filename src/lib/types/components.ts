@@ -17,6 +17,16 @@ export type ServicesType = {
   bgColor: string;
   textBgColor: string;
   textColor: string;
-  iconHasBg: boolean;
   iconType: IconButtonType.DARK | IconButtonType.LIGHT
+}
+
+export type CaseStudyType = {
+  id: number;
+  body: string;
+}
+
+export type WorkingProcessType = {
+  id: number;
+  title: string;
+  body: string;
 }

@@ -16,7 +16,9 @@ const TextButton = (props: TextButtonProps & PropsWithChildren) => {
 
   const textButtonClassName = cn('py-4 rounded-[14px] px-8 bg-customDark text-white text-xl transition hover:bg-customGreen hover:text-customDark', className);
   return (
-    <button className={textButtonClassName}>{children}</button>
+    <div className="max-lg:flex max-lg:flex-1">
+      <button className={textButtonClassName}>{children}</button>
+    </div>
   )
 }
 

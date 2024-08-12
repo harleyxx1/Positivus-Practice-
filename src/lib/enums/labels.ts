@@ -9,4 +9,10 @@ export enum Labels {
   SERVICES_FOURTH_TITLE = 'Email Marketing',
   SERVICES_FIFTH_TITLE = 'Content Creator',
   SERVICES_SIXTH_TITLE = 'Analytics and Tracking',
+  MAKE_HAPPEN_TITLE = 'Let’s make things happen',
+  MAKE_HAPPEN_SUBTITLE = 'Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.',
+  WORKING_PROGRESS_TITLE = 'Our Working Process',
+  WORKING_PROGRESS_SUBTITLE = 'Step-by-Step Guide to Achieving Your Business Goals',
+  TEAM_TITLE = 'Team',
+  TEAM_SUBTITLE = 'Meet the skilled and experienced team behind our successful digital marketing strategies'
 }
