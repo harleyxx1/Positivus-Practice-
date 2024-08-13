@@ -33,7 +33,6 @@ const WorkingProcessCard = (props: WorkingProcessCardProps) => {
         </button>
       </div>
       <div className={bodyClassname}>
-        <div className="w-full bg-black h-[1px] border-r my-[15px]" />
         <span>{item.body}</span>
       </div>
     </div >

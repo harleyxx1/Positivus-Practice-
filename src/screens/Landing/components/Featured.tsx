@@ -1,5 +1,5 @@
 import { ButtonTitles, Labels } from "../../../lib/enums"
-import featuredImg from '../../../assets/featured_img.svg';
+import featuredImg from '../../../assets/icons/featured_img.svg';
 import TextButton from "../../../components/TextButton";
 
 const Featured = () => {
