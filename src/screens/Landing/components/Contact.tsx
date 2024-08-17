@@ -2,10 +2,11 @@ import SectionHeading from "../../../components/SectionHeading"
 import { ButtonTitles, Labels } from "../../../lib/enums"
 import contact from '../../../assets/icons/contact.svg';
 import TextButton from "../../../components/TextButton";
+import { ComponentIds } from "../../../lib/enums/ids";
 
 const Contact = () => {
   return (
-    <div className="mt-[60px] lg:mt-36">
+    <div id={ComponentIds.CONTACT} className="mt-[60px] lg:mt-36">
       <SectionHeading customTextClassname="lg:max-w-[320px]" title={Labels.CONTACT_US_TITLE} subTitle={Labels.CONTACT_US_SUBTITLE} />
       <div className="p-[30px] lg:px-[100px] lg:py-[60px] rounded-[35px] bg-customGrey flex flex-row">
         <div className="flex flex-1 flex-col">

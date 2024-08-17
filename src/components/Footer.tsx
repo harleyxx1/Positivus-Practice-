@@ -1,34 +1,17 @@
 import logoWhite from '../assets/icons/logo_white.svg'
 import { ButtonTitles, IconButtonType, Labels } from '../lib/enums';
-import { NavBarButtonType } from '../lib/types';
 import TextButton from './TextButton';
 import TitleText from './TitleText';
 import linkedinBlack from '../assets/icons/linkedin_black.svg';
 import fbBlack from '../assets/icons/fb_black.svg';
 import twitterBlack from '../assets/icons/twitter_black.svg';
 import Divider from './Divider';
+import { ListOfButtons } from '../lib/enums/nav';
 
 const Footer = () => {
   const email = 'info@positivus.com';
   const contact = '555-567-8901';
   const address = `1234 Main St\nMoonstone City, Stardust State 12345`;
-
-  const listOfButtons: NavBarButtonType[] = [{
-    id: 0,
-    name: ButtonTitles.SERVICES
-  }, {
-    id: 1,
-    name: ButtonTitles.STUDY
-  }, {
-    id: 2,
-    name: ButtonTitles.PROCESS
-  }, {
-    id: 3,
-    name: ButtonTitles.TEAM
-  }, {
-    id: 4,
-    name: ButtonTitles.CONTACT
-  }];
 
   const socialButton = () => {
     return (
@@ -52,7 +35,12 @@ const Footer = () => {
         <div className='flex flex-1 items-center flex-col md:flex-row md:justify-between gap-8'>
           <img className='w-36' src={logoWhite} />
           <div className='flex flex-col md:flex-row gap-4'>
-            {listOfButtons.map(item => <button>
+            {ListOfButtons.map(item => <button onClick={() => {
+              const element = document.getElementById(item.componentId);
+              element?.scrollIntoView({
+                behavior: 'smooth'
+              })
+            }}>
               <span className='text-white text-[16px]'>
                 {item.name}
               </span>

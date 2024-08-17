@@ -11,6 +11,7 @@ import linkedInGreen from '../../../assets/icons/linkedin_green.svg'
 import Icon from "../../../components/Icon";
 import Divider from "../../../components/Divider";
 import TextButton from "../../../components/TextButton";
+import { ComponentIds } from "../../../lib/enums/ids";
 
 const Team = () => {
   const listOfTeamMember: TeamMemberType[] = [
@@ -54,7 +55,7 @@ const Team = () => {
   ]
 
   return (
-    <div className="mt-[60px] lg:mt-36 flex flex-1 flex-col">
+    <div id={ComponentIds.TEAM} className="mt-[60px] lg:mt-36 flex flex-1 flex-col">
       <SectionHeading title={Labels.TEAM_TITLE} subTitle={Labels.TEAM_SUBTITLE} />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px]">
         {

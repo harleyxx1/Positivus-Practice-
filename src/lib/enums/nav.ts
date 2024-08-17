@@ -9,19 +9,19 @@ export const ListOfButtons: NavBarButtonType[] = [{
 }, {
   id: 1,
   name: ButtonTitles.STUDY,
-  componentId: ''
+  componentId: ComponentIds.STUDIES
 }, {
   id: 2,
   name: ButtonTitles.PROCESS,
-  componentId: ''
+  componentId: ComponentIds.PROCESS
 }, {
   id: 3,
   name: ButtonTitles.TEAM,
-  componentId: ''
+  componentId: ComponentIds.TEAM
 }, {
   id: 4,
   name: ButtonTitles.CONTACT,
-  componentId: ''
+  componentId: ComponentIds.CONTACT
 }, {
   id: 5,
   name: ButtonTitles.REQUEST_QOUTE,

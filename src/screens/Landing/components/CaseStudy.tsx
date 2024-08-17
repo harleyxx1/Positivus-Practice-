@@ -1,5 +1,6 @@
 import IconButton from "../../../components/IconButton";
 import SectionHeading from "../../../components/SectionHeading"
+import { ComponentIds } from "../../../lib/enums/ids";
 import { CaseStudyType } from "../../../lib/types";
 
 const CaseStudy = () => {
@@ -15,7 +16,7 @@ const CaseStudy = () => {
   }];
 
   return (
-    <div className="mt-[60px] lg:mt-36">
+    <div id={ComponentIds.STUDIES} className="mt-[60px] lg:mt-36">
       <SectionHeading title="Case Studies" subTitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies" />
       <div className="flex max-lg:flex-nowrap max-lg:overflow-x-scroll flex-row max-lg:gap-5 lg:bg-customDark lg:p-[60px] lg:rounded-[35px]">
         {listOfCaseStudy.map(item => <div className="flex flex-row max-lg:bg-customDark max-lg:rounded-[35px]">

@@ -1,6 +1,7 @@
 import SectionHeading from "../../../components/SectionHeading"
 import WorkingProcessCard from "../../../components/WorkingProcessCard";
 import { Labels } from "../../../lib/enums"
+import { ComponentIds } from "../../../lib/enums/ids";
 import { WorkingProcessType } from "../../../lib/types";
 
 const WorkingProcess = () => {
@@ -38,7 +39,7 @@ const WorkingProcess = () => {
   ];
 
   return (
-    <div className="mt-[60px] lg:mt-36">
+    <div id={ComponentIds.PROCESS} className="mt-[60px] lg:mt-36">
       <SectionHeading title={Labels.WORKING_PROGRESS_TITLE} subTitle={Labels.WORKING_PROGRESS_SUBTITLE} customTextClassname="lg:max-w-[300px]" />
       <div className="flex flex-col gap-7">
         {listOfWorkingProcess.map(item => <WorkingProcessCard item={item} />)}
