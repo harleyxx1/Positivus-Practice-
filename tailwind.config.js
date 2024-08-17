@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      ringColor: {
+        customGrey: '#F3F3F3',
+        customGreen: '#B9FF66',
+        customDark: '#191A23'
+      },
       borderColor: {
         customGrey: '#F3F3F3',
         customGreen: '#B9FF66',
@@ -26,6 +31,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 

@@ -14,5 +14,12 @@ export enum Labels {
   WORKING_PROGRESS_TITLE = 'Our Working Process',
   WORKING_PROGRESS_SUBTITLE = 'Step-by-Step Guide to Achieving Your Business Goals',
   TEAM_TITLE = 'Team',
-  TEAM_SUBTITLE = 'Meet the skilled and experienced team behind our successful digital marketing strategies'
+  TEAM_SUBTITLE = 'Meet the skilled and experienced team behind our successful digital marketing strategies',
+  CONTACT_US_TITLE = 'Contact Us',
+  CONTACT_US_SUBTITLE = `Connect with Us: Let's Discuss Your Digital Marketing Needs`,
+  NAME = 'Name',
+  EMAIL = 'Email',
+  MESSAGE = 'Message',
+  CONTACT_US_BODY = 'Contact us',
+  RIGHTS = '© 2023 Positivus. All Rights Reserved.',
 }

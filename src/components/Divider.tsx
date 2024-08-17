@@ -15,7 +15,7 @@ interface DividerProps {
 const Divider = (props: DividerProps) => {
   const { horizontal = false, customDividerClassname, value = 1 } = props;
 
-  const dividerClassname = cn(horizontal ? `w-full h-[${value}px]` : `h-full w-[${value}px]`, ` bg-black`, customDividerClassname)
+  const dividerClassname = cn(horizontal ? `w-full h-[${value}px]` : `h-full w-[${value}px]`, `bg-black`, customDividerClassname)
 
   return (
     <div className={dividerClassname} />

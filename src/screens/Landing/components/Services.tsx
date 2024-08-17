@@ -9,6 +9,7 @@ import SectionHeading from "../../../components/SectionHeading";
 import { IconButtonType, Labels } from "../../../lib/enums";
 import { ServicesType } from "../../../lib/types";
 import { cn } from "../../../lib/utils";
+import { ComponentIds } from "../../../lib/enums/ids";
 
 const Services = () => {
   const listOfServices: ServicesType[] = [{
@@ -62,7 +63,7 @@ const Services = () => {
   }];
 
   return (
-    <div className="mt-[60px] lg:mt-36">
+    <div id={ComponentIds.SERVICES} className="mt-[60px] lg:mt-36">
       <SectionHeading title={Labels.SERVICES_TITLE} subTitle={Labels.SERVICES_SUBTITLE} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {listOfServices.map(item => {

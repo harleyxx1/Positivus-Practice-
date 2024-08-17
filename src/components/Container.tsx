@@ -15,7 +15,7 @@ interface ContainerProps {
 const Container = (props: ContainerProps & PropsWithChildren) => {
   const { className } = props;
 
-  const containerClassName = cn('min-w-[420px] py-[30px] sm:container sm:mx-auto max-sm:px-5 lg:py-[60px]', className);
+  const containerClassName = cn('min-w-[420px] pt-[30px] sm:container sm:mx-auto max-sm:px-5 lg:pt-[60px]', className);
 
   return (
     <div className={containerClassName}>{props.children}</div>

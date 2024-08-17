@@ -1,4 +1,5 @@
 import { cn } from "../lib/utils";
+import TitleText from "./TitleText";
 
 interface SectionHeadingProps {
   title: string;
@@ -24,9 +25,7 @@ const SectionHeading = (props: SectionHeadingProps) => {
   return (
     <div className={containerClassName}>
       <div className="flex max-lg:justify-center">
-        <div className="bg-customGreen justify-self-centerf px-2 rounded-lg">
-          <h1>{title}</h1>
-        </div>
+        <TitleText title={title} />
       </div>
       <p className={textClassname}>{subTitle}</p>
     </div>

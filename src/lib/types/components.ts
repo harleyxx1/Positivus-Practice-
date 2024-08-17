@@ -3,6 +3,7 @@ import { IconButtonType } from "../enums";
 export type NavBarButtonType = {
   id: number;
   name: string;
+  componentId: string;
 }
 
 export type CompanyType = {

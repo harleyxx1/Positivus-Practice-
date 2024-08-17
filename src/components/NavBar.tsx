@@ -1,11 +1,9 @@
 import logoGreen from '../assets/icons/logo_green.svg';
-import { ButtonTitles } from '../lib/enums';
-import { NavBarButtonType } from '../lib/types';
 import TextButton from './TextButton';
 import burger from '../assets/icons/burger.svg';
-import Container from './Container';
 import { cn } from '../lib/utils';
 import { useState } from 'react';
+import { ListOfButtons } from '../lib/enums/nav';
 
 /**
  * A component that shows the nav bar.
@@ -15,26 +13,6 @@ import { useState } from 'react';
  */
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
-  const listOfButtons: NavBarButtonType[] = [{
-    id: 0,
-    name: ButtonTitles.ABOUT_US
-  }, {
-    id: 1,
-    name: ButtonTitles.SERVICES
-  }, {
-    id: 2,
-    name: ButtonTitles.USE_CASES
-  }, {
-    id: 3,
-    name: ButtonTitles.PRICING
-  }, {
-    id: 4,
-    name: ButtonTitles.BLOG
-  }, {
-    id: 5,
-    name: ButtonTitles.REQUEST_QOUTE
-  }];
 
   const onClickBurger = () => {
     setOpen(!open);
@@ -52,12 +30,17 @@ const NavBar = () => {
       </div>
       <div className={collapsibleContainer}>
         <div className='sm:container sm:mx-auto flex max-lg:py-5 max-lg:flex-col lg:flex-row lg:gap-7 max-lg:gap-2 xl:gap-10'>
-          {listOfButtons.map(item =>
-            item.id === listOfButtons.length - 1 ?
+          {ListOfButtons.map(item =>
+            item.id === ListOfButtons.length - 1 ?
               <TextButton customButtonClassName="max-lg:flex-1" buttonText={item.name} />
               :
               (
-                <button type='button' className='font-normal text-xl transition-all px-2 max-lg:py-4 hover:bg-customDark hover:text-white'>{item.name}</button>
+                <button onClick={() => {
+                  const theElement = document.getElementById(item.componentId);
+                  theElement?.scrollIntoView({
+                    behavior: 'smooth'
+                  })
+                }} type='button' className='font-normal text-xl transition-all px-2 max-lg:py-4 hover:bg-customDark hover:text-white'>{item.name}</button>
               )
           )}
         </div>
